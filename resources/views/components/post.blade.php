@@ -5,7 +5,13 @@
   ></div>
   <div class="card-body">
     <h2 class="card-title">{{ $title }}</h2>
-    <p class="card-text">{{ $description }}</p>
+    @if($href !== '')
+      <p class="card-text" dangerously>
+        {!! \Illuminate\Support\Str::limit(strip_tags($description), $limit = 200, $end = '...') !!}
+      </p>
+      @else
+      {!! $description !!}
+    @endif
     <p class="card-text"><small class="text-muted">{{ $author }} - {{ $publishedAt }}</small></p>
     @if($href !== '')
       <a href="{{ $href }}" class="stretched-link"></a>

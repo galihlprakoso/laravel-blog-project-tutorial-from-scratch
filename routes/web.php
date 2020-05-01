@@ -22,7 +22,9 @@ Route::group(['middleware' => ['auth']], function() {
   Route::post('/user/post', 'PostController@store')->name('user.post.store');
 
   Route::get('/user/post/{post}', 'PostController@edit')->name('user.post.edit');
-  Route::put('/user/post/{post}', 'PostController@edit')->name('user.post.update');
+  Route::put('/user/post/{post}', 'PostController@update')->name('user.post.update');
+
+  Route::get('/user/post/delete/{post}', 'PostController@destroy')->name('user.post.delete');
 });
 
 

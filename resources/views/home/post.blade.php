@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+Post - {{ $post->title }}
+@endsection
+
 @section('content')
   <div class="container mt-4">
     <x-post

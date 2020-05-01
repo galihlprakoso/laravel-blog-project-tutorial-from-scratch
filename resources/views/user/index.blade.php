@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+User
+@endsection
+
 @section('content')
   <div class="container mt-4">
     <x-jumbotron
@@ -14,7 +18,7 @@
         :thumbnail="$post->thumbnail"
         :description="$post->content"
         :published-at="$post->created_at"
-        :href="'/post/'.$post->id"
+        :href="'/user/post/'.$post->id"
       />
     @endforeach
 

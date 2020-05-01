@@ -7,11 +7,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       @auth
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="{{ route('user.post.create') }}">Create Post</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('frm-logout').submit();">
+              Logout
+          </a>    
+          <form id="frm-logout" action="{{ route('logout') }}" method="POST" style="display: none;">
+              {{ csrf_field() }}
+          </form>
+        </li>
       @else
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="/login">Login</a>
         </li>
         <li class="nav-item">
@@ -19,9 +27,16 @@
         </li>
       @endauth
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    @auth
+      <form action="/user" method="GET" class="form-inline my-2 my-lg-0">
+        <input type="search" name="search" value="{{ request()->get('search') }}" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    @else
+      <form action="/" method="GET" class="form-inline my-2 my-lg-0">
+        <input type="search" name="search" value="{{ request()->get('search') }}" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    @endauth
   </div>
 </nav>

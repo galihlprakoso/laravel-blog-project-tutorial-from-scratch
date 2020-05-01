@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title')
+Home
+@endsection
+
 @section('content')
   <div class="container mt-4">
     <x-jumbotron
@@ -18,6 +22,6 @@
       />
     @endforeach
 
-    {{ $posts->links() }}
+    {{ $posts->appends(Request::all())->links() }}
   </div>
 @endsection
