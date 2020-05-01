@@ -3,6 +3,18 @@
 <h2>Materials</h2>
 <p>This tutorial will cover some of the fundamental concepts of Laravel. After finishing this tutorial, you will be able to build a production ready web app.</p>
 <ul>
+  <li>Migrations
+    <ul>
+      <li>Create migrations</li>
+      <li>Create seeder</li>
+    </ul>
+  </li>
+  <li>Model
+    <ul>
+      <li>Eloquent</li>
+      <li>Table relation</li>
+    </ul>
+  </li>
   <li>Authentication
     <ul>
       <li>Laravel Auth UI Scaffolding</li>
@@ -20,7 +32,7 @@
       <li>Show View</li>
       <li>Request</li>
       <li>Flash message</li>
-      <li>File uploading</li>
+      <li>Validation</li>
     </ul>
   </li>
   <li>Form
@@ -45,7 +57,7 @@
       <li>Layout</li>
     </ul>
   </li>
-  <li>Bonus
+  <li>Bonuses
     <ul>
       <li>Bootstrap</li>
       <li>Pagination</li>
