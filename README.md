@@ -58,11 +58,11 @@
 <p>Make sure you have .env file that contains correct informations about your environment. If you don't, just create .env file based on `.env.example` file.</p>
 <h3>run migrations</h3>
 <p>Run the migrations by using this command. This command will create all the tables and run the seeder.</p>
-```
+<pre>
 php artisan migrate:fresh --seed
-```
+</pre>
 <h3>run project</h3>
 <p>Finally, run the project by using this command.</p>
-```
+<pre>
 php artisan serve
-```
+</pre>
