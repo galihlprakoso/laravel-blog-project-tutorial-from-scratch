@@ -1,7 +1,7 @@
 <h1>Laravel Blog Project Tutorial from Scratch</h1>
 <p>This tutorial is available on youtube. In this tutorial we will build a public blog. Any user can register, login and create a blog post.</p>
 <h2>Materials</h2>
-<p>This tutorial will cover all the fundamental concepts of Laravel. After finishing this tutorial, you will be able to build a production ready web app.</p>
+<p>This tutorial will cover some of the fundamental concepts of Laravel. After finishing this tutorial, you will be able to build a production ready web app.</p>
 <ul>
   <li>Authentication
     <ul>
