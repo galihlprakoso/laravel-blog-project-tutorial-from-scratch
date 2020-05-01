@@ -3,6 +3,13 @@
 <h2>Materials</h2>
 <p>This tutorial will cover some of the fundamental concepts of Laravel. After finishing this tutorial, you will be able to build a production ready web app.</p>
 <ul>
+  <li>Artisan Commands
+    <ul>
+      <li>Create Model, Migrations and Seeder</li>
+      <li>Create controller</li>
+      <li>Create components</li>
+    </ul>
+  </li>
   <li>Migrations
     <ul>
       <li>Create migrations</li>
