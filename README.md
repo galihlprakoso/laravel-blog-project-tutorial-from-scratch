@@ -80,6 +80,11 @@
 <pre>
 php artisan migrate:fresh --seed
 </pre>
+<h3>javascript and css</h3>
+<p>Before we run the project, we should install javascript module by using this command :</p>
+<pre>npm install</pre>
+<p>And after that, run this command to build the development version of javascript and css :</p>
+<pre>npm run dev</pre>
 <h3>run project</h3>
 <p>Finally, run the project by using this command.</p>
 <pre>
